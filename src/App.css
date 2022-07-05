@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button{
+  outline: none;
+}
+a, a:hover{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,ol{
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+body{
+  background: #000;
+}
+.header{
+  padding: 30px 0;
+}
+
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav-menu{
+  width: 100%;
+  padding: 0 10px;
+  height: 50px;
+  background: #013475;
+  border-radius: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active .nav-menu__item{
+  padding: 2px 5px;
+  background: green;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.nav-menu__item{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0 20px;
+}
+.logo{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header-items{
+  display: flex;
+  margin: 30px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-input{
+  margin-left: 20%;
+  background: rgba(122, 122, 122, 0.45);
+  backdrop-filter: blur(4px);
+  border-radius: 25px;
+  border: none;
+  width: 500px;
+  padding: 0 30px;
+  font-size: 16px;
+  color: white;
+}
+.text-about-company{
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 20px 0;
 }
